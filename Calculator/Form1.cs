@@ -130,7 +130,7 @@ namespace Calculator
 
         private void PowerClick(object sender, EventArgs e)
         {
-
+            updateScreen("^");
         }
 
         private void RightParenthese(object sender, EventArgs e)
