@@ -105,7 +105,11 @@ namespace Calculator
 
         private void AdditionClick(object sender, EventArgs e)
         {
-            updateScreen("+");
+            if (!label1.Text.Last().Equals("+") || !label1.Text.Last().Equals("-") || !label1.Text.Last().Equals("*") || !label1.Text.Last().Equals("/"))
+            {
+                updateScreen("+");
+            }
+            
         }
 
         private void SubtractionClick(object sender, EventArgs e)
