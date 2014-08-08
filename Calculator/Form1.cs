@@ -123,7 +123,7 @@ namespace Calculator
             updateScreen("/");
         }
 
-        private void button14_Click(object sender, EventArgs e)
+        private void EqualClick(object sender, EventArgs e)
         {
 
         }
