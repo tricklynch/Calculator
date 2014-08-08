@@ -127,5 +127,20 @@ namespace Calculator
         {
 
         }
+
+        private void PowerClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RightParenthese(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LeftParenthese(object sender, EventArgs e)
+        {
+
+        }
     }
 }

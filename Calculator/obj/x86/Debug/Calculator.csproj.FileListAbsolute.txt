@@ -14,3 +14,11 @@ Z:\Ethan_R\Calculator\Calculator\obj\x86\Debug\Calculator.Properties.Resources.r
 Z:\Ethan_R\Calculator\Calculator\obj\x86\Debug\Calculator.csproj.GenerateResource.Cache
 Z:\Ethan_R\Calculator\Calculator\Calculator\obj\x86\Debug\Calculator.exe
 Z:\Ethan_R\Calculator\Calculator\Calculator\obj\x86\Debug\Calculator.pdb
+C:\Users\Camper\Desktop\Calculator\Calculator\obj\x86\Debug\Calculator.exe
+C:\Users\Camper\Desktop\Calculator\Calculator\obj\x86\Debug\Calculator.pdb
+C:\Users\Camper\Desktop\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\Camper\Desktop\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Camper\Desktop\Calculator\Calculator\obj\x86\Debug\Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Camper\Desktop\Calculator\Calculator\obj\x86\Debug\Calculator.Form1.resources
+C:\Users\Camper\Desktop\Calculator\Calculator\obj\x86\Debug\Calculator.Properties.Resources.resources
+C:\Users\Camper\Desktop\Calculator\Calculator\obj\x86\Debug\Calculator.csproj.GenerateResource.Cache

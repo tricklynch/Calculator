@@ -46,6 +46,9 @@
             this.Subtraction = new System.Windows.Forms.Button();
             this.Multiplication = new System.Windows.Forms.Button();
             this.Division = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -177,10 +180,10 @@
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.BackspaceClick);
             // 
-            // button13
+            // Addition
             // 
             this.Addition.Location = new System.Drawing.Point(88, 141);
-            this.Addition.Name = "button13";
+            this.Addition.Name = "Addition";
             this.Addition.Size = new System.Drawing.Size(25, 25);
             this.Addition.TabIndex = 13;
             this.Addition.Text = "+";
@@ -197,41 +200,74 @@
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
-            // button15
+            // Subtraction
             // 
             this.Subtraction.Location = new System.Drawing.Point(88, 170);
-            this.Subtraction.Name = "button15";
+            this.Subtraction.Name = "Subtraction";
             this.Subtraction.Size = new System.Drawing.Size(25, 25);
             this.Subtraction.TabIndex = 15;
             this.Subtraction.Text = "-";
             this.Subtraction.UseVisualStyleBackColor = true;
             this.Subtraction.Click += new System.EventHandler(this.SubtractionClick);
             // 
-            // button16
+            // Multiplication
             // 
             this.Multiplication.Location = new System.Drawing.Point(88, 199);
-            this.Multiplication.Name = "button16";
+            this.Multiplication.Name = "Multiplication";
             this.Multiplication.Size = new System.Drawing.Size(25, 25);
             this.Multiplication.TabIndex = 16;
             this.Multiplication.Text = "X";
             this.Multiplication.UseVisualStyleBackColor = true;
             this.Multiplication.Click += new System.EventHandler(this.MultiplicationClick);
             // 
-            // button17
+            // Division
             // 
             this.Division.Location = new System.Drawing.Point(88, 227);
-            this.Division.Name = "button17";
+            this.Division.Name = "Division";
             this.Division.Size = new System.Drawing.Size(25, 25);
             this.Division.TabIndex = 17;
             this.Division.Text = "/";
             this.Division.UseVisualStyleBackColor = true;
             this.Division.Click += new System.EventHandler(this.DivisionClick);
             // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(113, 200);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(25, 25);
+            this.button13.TabIndex = 18;
+            this.button13.Text = "^";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.PowerClick);
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(113, 170);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(25, 25);
+            this.button15.TabIndex = 19;
+            this.button15.Text = "(";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.LeftParenthese);
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(138, 170);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(25, 25);
+            this.button16.TabIndex = 20;
+            this.button16.Text = ")";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.RightParenthese);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.button16);
+            this.Controls.Add(this.button15);
+            this.Controls.Add(this.button13);
             this.Controls.Add(this.Division);
             this.Controls.Add(this.Multiplication);
             this.Controls.Add(this.Subtraction);
@@ -277,6 +313,9 @@
         private System.Windows.Forms.Button Subtraction;
         private System.Windows.Forms.Button Multiplication;
         private System.Windows.Forms.Button Division;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button16;
     }
 }
 
