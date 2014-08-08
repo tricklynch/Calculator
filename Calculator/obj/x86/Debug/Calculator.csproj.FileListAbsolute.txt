@@ -22,3 +22,4 @@ C:\Users\Camper\Desktop\Calculator\Calculator\obj\x86\Debug\Calculator.csprojRes
 C:\Users\Camper\Desktop\Calculator\Calculator\obj\x86\Debug\Calculator.Form1.resources
 C:\Users\Camper\Desktop\Calculator\Calculator\obj\x86\Debug\Calculator.Properties.Resources.resources
 C:\Users\Camper\Desktop\Calculator\Calculator\obj\x86\Debug\Calculator.csproj.GenerateResource.Cache
+Z:\Ethan_R\Calculator\Calculator\obj\x86\Debug\Calculator.csprojResolveAssemblyReference.cache

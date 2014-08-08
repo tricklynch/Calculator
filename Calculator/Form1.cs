@@ -135,12 +135,12 @@ namespace Calculator
 
         private void RightParenthese(object sender, EventArgs e)
         {
-
+            updateScreen(")");
         }
 
         private void LeftParenthese(object sender, EventArgs e)
         {
-
+            updateScreen("(");
         }
     }
 }
