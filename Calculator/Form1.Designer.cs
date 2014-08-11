@@ -2,6 +2,7 @@
 {
     partial class Form1
     {
+        // This comment is being used as a test
         /// <summary>
         /// Required designer variable.
         /// </summary>
