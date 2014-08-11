@@ -105,26 +105,35 @@ namespace Calculator
 
         private void AdditionClick(object sender, EventArgs e)
         {
-            if (!label1.Text.Last().Equals("+") || !label1.Text.Last().Equals("-") || !label1.Text.Last().Equals("*") || !label1.Text.Last().Equals("/") || !label1.Text.Last().Equals(".")) ;
-            {
+            //if (!label1.Text.Last().Equals("+") || !label1.Text.Last().Equals("-") || !label1.Text.Last().Equals("x") || !label1.Text.Last().Equals("/") || !label1.Text.Last().Equals(".")) 
+            //{
                 updateScreen("+");
-            }
+            //}
             
         }
 
         private void SubtractionClick(object sender, EventArgs e)
         {
-            updateScreen("-");
+          //  if ( !label1.Text.Last().Equals("."))
+           // {
+                updateScreen("-");
+          //  }
         }
 
         private void MultiplicationClick(object sender, EventArgs e)
         {
-            updateScreen("x");
+            /*if (!label1.Text.Last().Equals("+") || !label1.Text.Last().Equals("-") || !label1.Text.Last().Equals("x") || !label1.Text.Last().Equals("/") || !label1.Text.Last().Equals("."))
+            {*/
+                updateScreen("x");
+            //}
         }
 
         private void DivisionClick(object sender, EventArgs e)
         {
-            updateScreen("/");
+          //  if (!label1.Text.Last().Equals("+") || !label1.Text.Last().Equals("-") || !label1.Text.Last().Equals("x") || !label1.Text.Last().Equals("/") || !label1.Text.Last().Equals("."))
+            //{
+                updateScreen("/");
+            //}
         }
 
         private void EqualClick(object sender, EventArgs e)
@@ -134,17 +143,46 @@ namespace Calculator
 
         private void PowerClick(object sender, EventArgs e)
         {
-            updateScreen("^");
+          //  if (!label1.Text.Last().Equals("+") || !label1.Text.Last().Equals("-") || !label1.Text.Last().Equals("x") || !label1.Text.Last().Equals("/") || !label1.Text.Last().Equals("."))
+          //  {
+                updateScreen("^");
+          //  }
         }
 
         private void RightParenthese(object sender, EventArgs e)
         {
-            updateScreen(")");
+      //      if (!label1.Text.Last().Equals("+") || !label1.Text.Last().Equals("-") || !label1.Text.Last().Equals("x") || !label1.Text.Last().Equals("/") || !label1.Text.Last().Equals("."))
+       //     {
+                updateScreen(")");
+       //     }
         }
 
         private void LeftParenthese(object sender, EventArgs e)
         {
+          // if(!label1.Text.Last().Equals("."))
+            //{
             updateScreen("(");
+           // }
+        }
+
+        private void SQRTClick(object sender, EventArgs e)
+        {
+            updateScreen("sqrt(");
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            updateScreen("cos(");
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            updateScreen("tan(");
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            updateScreen("sin(");
         }
     }
 }
