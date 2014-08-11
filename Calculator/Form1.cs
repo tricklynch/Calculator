@@ -138,7 +138,29 @@ namespace Calculator
 
         private void EqualClick(object sender, EventArgs e)
         {
-
+            List<double> list = new List<double> { };
+            List<string> slist = new List<string> { };
+            string input = label1.Text;
+            string firstInput = "";
+            string secondInput = "";
+            int i;
+            for (i = 0; i < input.Length; i++)
+            {
+                if (!input[i].Equals("+"))
+                {
+                    firstInput += input[i];
+                }
+                else
+                {
+                    list.Add(double.Parse(firstInput));
+                    break;
+                }
+            }
+            for ( ; i < input.Length; i++)
+            {
+                secondInput += input[i];
+            }
+            list.Add(double.Parse(secondInput));
         }
 
         private void PowerClick(object sender, EventArgs e)
