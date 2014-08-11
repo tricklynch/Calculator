@@ -105,7 +105,11 @@ namespace Calculator
 
         private void AdditionClick(object sender, EventArgs e)
         {
-            updateScreen("+");
+            if (!label1.Text.Last().Equals("+") || !label1.Text.Last().Equals("-") || !label1.Text.Last().Equals("*") || !label1.Text.Last().Equals("/") || !label1.Text.Last().Equals(".")) ;
+            {
+                updateScreen("+");
+            }
+            
         }
 
         private void SubtractionClick(object sender, EventArgs e)
@@ -123,24 +127,24 @@ namespace Calculator
             updateScreen("/");
         }
 
-        private void button14_Click(object sender, EventArgs e)
+        private void EqualClick(object sender, EventArgs e)
         {
 
         }
 
         private void PowerClick(object sender, EventArgs e)
         {
-
+            updateScreen("^");
         }
 
         private void RightParenthese(object sender, EventArgs e)
         {
-
+            updateScreen(")");
         }
 
         private void LeftParenthese(object sender, EventArgs e)
         {
-
+            updateScreen("(");
         }
     }
 }
