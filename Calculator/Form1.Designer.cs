@@ -249,7 +249,7 @@
             // 
             // LeftParentheseClick
             // 
-            this.LeftParentheseClick.Location = new System.Drawing.Point(101, 186);
+            this.LeftParentheseClick.Location = new System.Drawing.Point(126, 161);
             this.LeftParentheseClick.Name = "LeftParentheseClick";
             this.LeftParentheseClick.Size = new System.Drawing.Size(25, 25);
             this.LeftParentheseClick.TabIndex = 19;
@@ -259,7 +259,7 @@
             // 
             // RightParentheseClick
             // 
-            this.RightParentheseClick.Location = new System.Drawing.Point(126, 186);
+            this.RightParentheseClick.Location = new System.Drawing.Point(151, 161);
             this.RightParentheseClick.Name = "RightParentheseClick";
             this.RightParentheseClick.Size = new System.Drawing.Size(25, 25);
             this.RightParentheseClick.TabIndex = 20;
@@ -279,7 +279,7 @@
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(151, 161);
+            this.button15.Location = new System.Drawing.Point(126, 186);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(50, 25);
             this.button15.TabIndex = 22;
@@ -299,7 +299,7 @@
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(126, 161);
+            this.button17.Location = new System.Drawing.Point(176, 161);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(25, 25);
             this.button17.TabIndex = 24;
@@ -309,12 +309,13 @@
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(151, 186);
+            this.button18.Location = new System.Drawing.Point(101, 186);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(25, 25);
             this.button18.TabIndex = 25;
             this.button18.Text = "π";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button19
             // 

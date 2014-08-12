@@ -228,5 +228,10 @@ namespace Calculator
         {
             label1.Text = "0";
         }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            updateScreen("π");
+        }
     }
 }
