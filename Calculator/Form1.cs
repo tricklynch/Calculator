@@ -140,30 +140,40 @@ namespace Calculator
         {
             List<double> list = new List<double> { };
             List<string> slist = new List<string> { };
-            string input = label1.Text;
-            string firstInput = "";
-            string secondInput = "";
-            int i;
-            for (i = 0; i < input.Length; i++)
+            while (label1.Text.Contains("+"))
             {
-                if (!input[i].Equals('+'))
+                string input = label1.Text;
+                string firstInput = "";
+                string secondInput = "";
+                int i;
+                for (i = 0; i < input.Length; i++)
                 {
-                    firstInput += input[i];
+                    if (!input[i].Equals('+'))
+                    {
+                        firstInput += input[i];
+                    }
+                    else
+                    {
+                        list.Add(double.Parse(firstInput));
+                        break;
+                    }
                 }
-                else
+                i++;
+                for (; i < input.Length; i++)
                 {
-                    list.Add(double.Parse(firstInput));
-                    break;
+                    if (!input[i].Equals('+'))
+                    {
+                        secondInput += input[i];
+                    }
+                    else
+                    {
+                        list.Add(double.Parse(secondInput));
+                        break;
+                    }
                 }
+                list.Add(double.Parse(secondInput));
+                updateScreen((list[0] + list[1]).ToString());
             }
-            i++;
-            for ( ; i < input.Length; i++)
-            {
-                secondInput += input[i];
-            }
-            list.Add(double.Parse(secondInput));
-            clearScreen();
-            updateScreen((list[0] + list[1]).ToString());
         }
 
         private void PowerClick(object sender, EventArgs e)
