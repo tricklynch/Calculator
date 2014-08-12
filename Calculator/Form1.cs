@@ -156,6 +156,7 @@ namespace Calculator
                     break;
                 }
             }
+            i++;
             for ( ; i < input.Length; i++)
             {
                 secondInput += input[i];
