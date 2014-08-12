@@ -146,7 +146,7 @@ namespace Calculator
             int i;
             for (i = 0; i < input.Length; i++)
             {
-                if (!input[i].Equals("+"))
+                if (!input[i].Equals('+'))
                 {
                     firstInput += input[i];
                 }
@@ -162,6 +162,8 @@ namespace Calculator
                 secondInput += input[i];
             }
             list.Add(double.Parse(secondInput));
+            clearScreen();
+            updateScreen((list[0] + list[1]).ToString());
         }
 
         private void PowerClick(object sender, EventArgs e)
@@ -206,6 +208,15 @@ namespace Calculator
         private void button13_Click(object sender, EventArgs e)
         {
             updateScreen("sin(");
+        }
+
+        private void ClearClick(object sender, EventArgs e)
+        {
+            clearScreen();
+        }
+        private void clearScreen()
+        {
+            label1.Text = "0";
         }
     }
 }
