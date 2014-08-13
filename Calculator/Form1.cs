@@ -178,7 +178,7 @@ namespace Calculator
                 }
                 label1.Text.Remove(0, firstInput.Length + secondInput.Length + 1);
                 input.Remove(0, firstInput.Length + secondInput.Length + 1);
-               //fixerUpper((firstPart+secondPart).ToString());
+                //fixerUpper((firstPart+secondPart).ToString());
                 //firstPart = firstPart + secondPart;
                 label1.Text = input;
             }
