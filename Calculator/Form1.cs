@@ -11,6 +11,7 @@ namespace Calculator
 {
     public partial class Form1 : Form
     {
+        int patrick2;
         double store;
         public Form1()
         {
@@ -102,6 +103,10 @@ namespace Calculator
                 label1.Text = label1.Text + patrick;
             }
         }
+        private void fixerUpper(string patrick)
+        {
+            label1.Text = patrick + label1.Text;
+        }
 
         private void AdditionClick(object sender, EventArgs e)
         {
@@ -138,8 +143,8 @@ namespace Calculator
 
         private void EqualClick(object sender, EventArgs e)
         {
-            List<double> list = new List<double> { };
-            List<string> slist = new List<string> { };
+            double firstPart = 0;
+            double secondPart = 0;
             while (label1.Text.Contains("+"))
             {
                 string input = label1.Text;
@@ -154,7 +159,7 @@ namespace Calculator
                     }
                     else
                     {
-                        list.Add(double.Parse(firstInput));
+                        firstPart = (double.Parse(firstInput));
                         break;
                     }
                 }
@@ -167,12 +172,15 @@ namespace Calculator
                     }
                     else
                     {
-                        list.Add(double.Parse(secondInput));
+                        secondPart = (double.Parse(secondInput));
                         break;
                     }
                 }
-                list.Add(double.Parse(secondInput));
-                updateScreen((list[0] + list[1]).ToString());
+                label1.Text.Remove(0, firstInput.Length + secondInput.Length + 1);
+                input.Remove(0, firstInput.Length + secondInput.Length + 1);
+               //fixerUpper((firstPart+secondPart).ToString());
+                //firstPart = firstPart + secondPart;
+                label1.Text = input;
             }
         }
 
