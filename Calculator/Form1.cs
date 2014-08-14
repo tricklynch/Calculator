@@ -143,43 +143,8 @@ namespace Calculator
 
         private void EqualClick(object sender, EventArgs e)
         {
-            double firstPart = 0;
-            double secondPart = 0;
-            while (label1.Text.Contains("+"))
-            {
-                string input = label1.Text;
-                string firstInput = "";
-                string secondInput = "";
-                int i;
-                for (i = 0; i < input.Length; i++)
-                {
-                    if (!input[i].Equals('+'))
-                    {
-                        firstInput += input[i];
-                    }
-                    else
-                    {
-                        firstPart = (double.Parse(firstInput));
-                        break;
-                    }
-                }
-                i++;
-                for (; i < input.Length; i++)
-                {
-                    if (!input[i].Equals('+'))
-                    {
-                        secondInput += input[i];
-                    }
-                    else
-                    {
-                        secondPart = (double.Parse(secondInput));
-                        break;
-                    }
-                }
-                label1.Text = label1.Text.Remove(0, firstInput.Length + secondInput.Length + 1);
-                input = input.Remove(0, firstInput.Length + secondInput.Length + 1);
-                fixerUpper((firstPart+secondPart).ToString());
-            }
+            multiplication();
+            addition();
         }
 
         private void PowerClick(object sender, EventArgs e)
@@ -238,6 +203,90 @@ namespace Calculator
         private void button18_Click(object sender, EventArgs e)
         {
             updateScreen("π");
+        }
+
+        private void addition()
+        {
+            double firstPart = 0;
+            double secondPart = 0;
+            while (label1.Text.Contains("+"))
+            {
+                string input = label1.Text;
+                string firstInput = "";
+                string secondInput = "";
+                int i;
+                for (i = 0; i < input.Length; i++)
+                {
+                    if (!input[i].Equals('+'))
+                    {
+                        firstInput += input[i];
+                    }
+                    else
+                    {
+                        firstPart = (double.Parse(firstInput));
+                        break;
+                    }
+                }
+                i++;
+                for (; i < input.Length; i++)
+                {
+                    if (input[i].Equals('+'))
+                    {
+                        secondPart = (double.Parse(secondInput));
+                        break;
+                    }
+                    else
+                    {
+                        secondInput += input[i];
+                    }
+                    secondPart = double.Parse(secondInput);
+                }
+                label1.Text = label1.Text.Remove(0, firstInput.Length + secondInput.Length + 1);
+                input = input.Remove(0, firstInput.Length + secondInput.Length + 1);
+                fixerUpper((firstPart + secondPart).ToString());
+            }
+
+        }
+        private void multiplication()
+        {
+            double firstPart = 0;
+            double secondPart = 0;
+            while (label1.Text.Contains("x"))
+            {
+                string input = label1.Text;
+                string firstInput = "";
+                string secondInput = "";
+                int i;
+                for (i = 0; i < input.Length; i++)
+                {
+                    if (!input[i].Equals('x'))
+                    {
+                        firstInput += input[i];
+                    }
+                    else
+                    {
+                        firstPart = (double.Parse(firstInput));
+                        break;
+                    }
+                }
+                i++;
+                for (; i < input.Length; i++)
+                {
+                    if (input[i].Equals('x'))
+                    {
+                        secondPart = (double.Parse(secondInput));
+                        break;
+                    }
+                    else
+                    {
+                        secondInput += input[i];
+                    }
+                    secondPart = double.Parse(secondInput);
+                }
+                label1.Text = label1.Text.Remove(0, firstInput.Length + secondInput.Length + 1);
+                input = input.Remove(0, firstInput.Length + secondInput.Length + 1);
+                fixerUpper((firstPart+secondPart).ToString());
+            }
         }
     }
 }
