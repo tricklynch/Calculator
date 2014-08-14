@@ -166,7 +166,7 @@ namespace Calculator
                 i++;
                 for (; i < input.Length; i++)
                 {
-                    if ((i == input.Length) || (input[i].Equals('+')))
+                    if (input[i].Equals('+'))
                     {
                         secondPart = (double.Parse(secondInput));
                         break;
@@ -175,6 +175,7 @@ namespace Calculator
                     {
                         secondInput += input[i];
                     }
+                    secondPart = double.Parse(secondInput);
                 }
                 label1.Text = label1.Text.Remove(0, firstInput.Length + secondInput.Length + 1);
                 input = input.Remove(0, firstInput.Length + secondInput.Length + 1);
